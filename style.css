@@ -1,0 +1,785 @@
+body{
+    background-color: #EADEC4;
+    margin: 0px;
+    padding: 0px;
+}
+.menu{
+    width: 100%;
+    display: table;
+    z-index: 6; /* перемещение на слоях */
+    position: relative;
+}
+.menu ul{
+    display: table-row;
+}
+.menu li{
+    display: table-cell;
+    background-color: #7A0005;
+}
+.menu li a{
+    text-decoration: none;
+    color: #050505;
+    display: block;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-family: Regular;
+    font-size: 22px;
+}
+.menu ul li:hover{
+    background-color: #3D5D8C;
+}
+@font-face {
+    font-family: Regular;
+    src: url(fonts/Kazimir-Regular.ttf);
+}
+@font-face {
+    font-family: Light;
+    src: url(fonts/Kazimir-Light.ttf);
+}
+@font-face {
+    font-family: Medium;
+    src: url(fonts/Kazimir-Medium.ttf);
+}@font-face {
+    font-family: Bold;
+    src: url(fonts/Kazimir-Bold.ttf);
+}
+@font-face {
+    font-family: Black;
+    src: url(fonts/Kazimir-Black.ttf);
+}@font-face {
+    font-family: LightItalic;
+    src: url(fonts/Kazimir-LightItalic.ttf);
+}
+@font-face {
+    font-family: Italic;
+    src: url(fonts/Kazimir-Italic.ttf);
+}@font-face {
+    font-family: MediumItalic;
+    src: url(fonts/Kazimir-MediumItalic.ttf);
+}
+@font-face {
+    font-family: BoldItalic;
+    src: url(fonts/Kazimir-BoldItalic.ttf);
+}
+@font-face {
+    font-family: BlackItalic;
+    src: url(fonts/Kazimir-BlackItalic.ttf);
+}
+.zagalovok{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 14;
+    text-align: center;
+    top: 131%;
+}
+.Z1{
+    font-family: Black;
+    font-size: 7.1vw;
+    color: #7A0005;
+}
+.Z2{
+    font-family: Medium;
+    font-size: 1.5vw;
+    margin-top: -7.6vw;
+}
+.blok1{
+    position: relative;
+}
+.sht1{
+    width: 24%;
+    position: absolute;
+    top: -22px;
+    left: -0.5px;
+    z-index: 1;
+}
+.sht2{
+    width: 24%;
+    position: absolute;
+    top: -22px;
+    right: 0px;
+    z-index: 1;
+}
+.maskacenter{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 33%;
+    /* margin-left: 10%;  */
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 47%;
+    top: 107%;
+    z-index: 10;
+}
+.eye{
+    margin-left: 6.1%;
+    width: 100%;
+    position: relative;
+    top: 1.7vw;
+}
+.rot{
+    width: 117%;
+    z-index: 1;
+}
+.ch{
+    display: flex;
+    justify-content: center;
+    gap: 42%; /*расстояние между элементами */
+    position: relative;
+    top: 25vw; /* относительно ширины */
+}
+.ch1{
+    width: 18%;
+}
+.blok2{
+    position: relative;
+    width: 100%;
+    margin-top: 19%;
+}
+.fon_s_buk{
+    width: 100%;
+    position: absolute;
+}
+.he{
+    position: absolute;
+    width: 100%;
+    top: 7vw;
+}
+.ch_s_c{
+    position: absolute;
+    width: 21%;
+    z-index: 12;
+    right: 12%;
+    top: 30vh;
+}
+.text1{
+    display: flex;
+    gap: 26%;
+    flex-direction: column;
+    z-index: 12;
+    position: absolute;
+    top: 19.6vw;
+    left: 12%;
+}
+.z1{
+    font-family: Bold;
+    font-size: 3.5vw;
+    color: #EADEC4;
+}
+.t1{
+    font-family: Regular;
+    font-size: 2.2vw;
+    color: #EADEC4;
+}
+.blok3 {
+    position: relative;
+    width: 100%;
+    margin-top: 102.2%;
+}
+.aftor1{
+    font-family: Medium;
+    font-size: 2vw;
+    transform: rotate(-13deg);
+    position: absolute;
+    left: 6%;
+    top: 1%;
+    
+}
+.aftor{
+    font-family: Medium;
+    font-size: 3vw;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    color: #EADEC4;
+    top: -1%;
+}
+.aftor2{
+    font-family: Medium;
+    font-size: 2vw;
+    transform: rotate(16.17deg);
+    position: absolute;
+    right: 3%;
+    top: 1%;
+}
+.q{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    z-index: 14;
+    text-align: center;
+    gap: 30%;
+    top: 5%;
+    color: #3D5D8C;
+}
+.q1{
+    font-family: Bold;
+    font-size: 8vw;
+    transform: rotate(12.9deg);
+}
+.q2{
+    font-family: Bold;
+    font-size: 8vw; 
+    transform: rotate(-8.19deg);
+    position: relative;
+    left: -5%;
+}
+.ma{
+    width: 100%;
+}
+.blok4{
+    position: relative;
+    top: 15vw;
+    width: 100%;
+    height: 48vw;
+}
+.pp{
+    background-color: #050505;
+    width: 100%;
+    height: 1.3vw;
+    border-radius: 7px;
+}
+.e1{
+    position: absolute;
+    top: -4%;
+    width: 32%;
+    left: 10vw;
+}
+.le1{
+    position: absolute;
+    right: 0;
+    top: 23%;
+}
+.t2{
+    font-family: Regular;
+    color: #7A0005;
+    font-size: 2.4vw;
+    position: absolute;
+    right: 3%;
+    top: 40%;
+}
+.blok5{
+    width: 100%;
+    position: relative;
+    top: 20vw;
+    height: 48vw;
+}
+.e2{
+    position: relative;
+    top: -6%;
+    width: 100%;
+}
+.pp1{
+    background-color: #050505;
+    width: 100%;
+    height: 1.3vw;
+    border-radius: 7px;
+}
+.b1{
+    position: absolute;
+    left: 8%;
+    z-index: 14;
+    gap: 0%;
+    top: 11.5vw;
+}
+.np{
+    font-family: Bold;
+    font-size: 2.6vw;
+    color: #EADEC4;
+    top: 40vw;
+}
+.ii{
+    position: absolute;
+    left: 12%;
+    z-index: 14;
+    gap: 0%;
+    top: 20vw;
+}
+.i1{
+    font-family: Bold;
+    font-size: 3vw;
+    top: 60%;
+}
+.__{
+    position: absolute;
+    left: 72%;
+    z-index: 14;
+    gap: 0%;
+    top: 20vw;
+}
+._1{
+    font-family: Italic;
+    font-size: 3vw;
+}
+.ll{
+    position: absolute;
+    left: 134%;
+    z-index: 14;
+    gap: 0%;
+    top: 20vw;
+}
+.l1{
+    font-family: Italic;
+    font-size: 3vw;
+}
+
+.I1l1{
+    position: absolute;
+    width: 35%;
+    left: 6vw;
+}
+.buk{
+    position: absolute;
+    top: -3%;
+    right: 6vw;
+}
+.blok6{
+    position: relative;
+    top: 20vw;
+    width: 100%;
+}
+.qqq{
+    position: absolute;
+    font-family: Bold;
+    font-size: 3.5vw;
+    color: #EADEC4;
+    left: 12%;
+    top: 2%;
+}
+.st1{
+    position: absolute;
+    width: 37%;
+    z-index: 10;
+    left: 5vw;
+    top: 17vh;
+}
+.skm{
+    position: absolute;
+    font-family: Regular;
+    font-size: 2.1vw;
+    color: #EADEC4;
+    transform: rotate(26.69deg);
+    top: 36.4%;
+    left: 67%;
+    z-index: 12;
+}
+.sq{
+    position: absolute;
+    font-family: Regular;
+    font-size: 6vw;
+    color: #EADEC4;
+    transform: rotate(26.69deg);
+    top: 34.8%;
+    left: 62%;
+    z-index: 12;
+}
+.run1{
+    position: absolute;
+    width: 42%;
+    z-index: 10;
+    right: 5vw;
+    top: 29vh;
+}
+.zf{
+    width: 100%;
+    z-index: 12;
+}
+.nach{
+    position: absolute;
+    justify-content: center;
+    font-family: Bold;
+    font-size: 3.5vw;
+    color: #7A0005;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    z-index: 16;
+    text-align: center;
+    gap: 30%;
+    top: 83%;
+}
+.mnogo{
+    position: absolute;
+    justify-content: center;
+    font-family: Regular;
+    font-size: 4.18vw;
+    transform: translate(-33%,-33%);
+    width: 71%;
+    height: 50vw;
+    left: 38.9%;
+    z-index: 18;
+    text-align: center;
+    top: 117.5%;
+}
+.c{
+    position: absolute;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    z-index: 14;
+    top: 132%;
+    left: 50%;
+}
+.blok7{
+    position: relative;
+    width: 100%;
+    top: 94vw;
+}
+.yaz{
+    position: absolute;
+    font-family: Bold;
+    font-size: 3.5vw;
+    left: 12%;
+    top: 19.1vh;
+}
+.ft{
+    position: absolute;
+    width: 100%;
+}
+.ya{
+    position: absolute;
+    width: 56%;
+    top: 34vh;
+    left: 4%;
+}
+.ya2{
+    position: absolute;
+    width: 90%;
+    right: 3%;
+    top: 32vh;
+}
+.dyou{
+    position: absolute;
+    font-family: MediumItalic;
+    color: #EADEC4;
+    font-size: 4.2vh;
+    top: 40vh;
+    left: 32%;
+}
+.longtext{
+    position: absolute;
+    font-family: Light;
+    text-align: center;
+    color: #EADEC4;
+    font-size: 4.2vh;
+    top: 84vh;
+    right: 15%;
+}
+.blok8{
+    position: relative;
+    width: 100%;
+    top: 173vw;
+    height: 30vw;
+}
+.nachert{
+    position: absolute;
+    font-family: Bold;
+    font-size: 3.5vw;
+    color: #7A0005;
+    left: 12%;
+    top: 2%;
+}
+.ri{
+    position: absolute;
+    width: 90%;
+    top: 10vw;
+    left: 5%;
+}
+.le{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 24.5vw;
+    color: #EADEC4;
+    left: 9.6%;
+    top: 61.5%;
+}
+.L{
+    font-family: Light;
+    font-size: 2vw;
+}
+.Bl{
+    font-family: Black;
+    font-size: 2vw;
+}
+.le1{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 9.2vw;
+    color: #EADEC4;
+    left: -42%;
+    top: 87%;
+}
+.R{
+    font-family: Regular;
+    font-size: 2vw;
+}
+.Bo{
+    font-family: Bold;
+    font-size: 2vw;
+}
+.vv{
+    position: absolute;
+    color:#EADEC4;
+    font-family: Bold;
+    font-size: 2.8vw;
+    z-index: 14;
+    top: 31%;
+    text-align: center;
+    left: 21.6%;
+}
+.vvv{
+    position: absolute;
+    color: #EADEC4;
+    font-family: BoldItalic;
+    font-size: 2vw;
+    z-index: 14;
+    top: 101%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    left: 50.2%;
+    display: flex;
+    justify-content: center;
+}
+.vvvv{
+    position: absolute;
+    color: #EADEC4;
+    font-family: BoldItalic;
+    font-size: 2.8vw;
+    z-index: 14;
+    top: 31%;
+    text-align: center;
+    right: 22%;
+}
+.pr{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 9.2vw;
+    color: #EADEC4;
+    right: 8.7%;
+    top: 61.5%;
+}
+.L1{
+    font-family: LightItalic;
+    font-size: 2vw;
+}
+.M1{
+    font-family: MediumItalic;
+    font-size: 2vw;
+}
+.Bl1{
+    font-family: BlackItalic;
+    font-size: 2vw;
+}
+.pr1{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 9.2vw;
+    color: #EADEC4;
+    right: 25.67%;
+    top: 87%;
+}
+.R1{
+    font-family: Italic;
+    font-size: 2vw;
+}
+.Bo1{
+    font-family: BoldItalic;
+    font-size: 2vw;
+}
+.m{
+    position: absolute;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    z-index: 16;
+    text-align: center;
+    gap: 30%;
+    margin-top: 52vw;
+}
+.blok9{
+    position: relative;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    top: 199.6vw;
+    z-index: 20;
+}
+.bg{
+    position: absolute;
+    width: 100%;
+}
+.lb{
+    position: absolute;
+    width: 80%;
+    top: 40vw;
+    left: 0;
+}
+.gde{
+    position: absolute;
+    font-family: Bold;
+    font-size: 3.5vw;
+    color: #050505;
+    left: 12%;
+    top: 38.5vw;
+}
+.sho{
+    position: absolute;
+    width: 84%;
+    top: 47.64vw;
+    left: 0.8%;
+}
+.vaf{
+    position: absolute;
+    font-family: Medium;
+    font-size: 3.5vw;
+    transform: rotate(26.83deg);
+    top: 71vw;
+    left: 44.6%;
+    color: #7A0005;
+}
+.af{
+    position: absolute;
+    top: 107vw;
+}
+.af1{
+    position: absolute;
+    left: 54%;
+}
+.af2{
+    position: absolute;
+    left: 54%;
+    top: 60vw;
+}
+.vu{
+    position: absolute;
+    width: 100%;
+    top: 225vw;
+    left: 13.4%;
+}
+.v{
+    position: absolute;
+}
+.tv{
+    position: absolute;
+    font-family: Medium;
+    font-size: 3vw;
+    color: #EADEC4;
+    left: 6%;
+    top: 3.4vw;
+}
+.v1{
+    position: absolute;
+    top: 17vw;
+    left: -5.8vw;
+}
+.s1{
+    position: absolute;
+    font-family: Black;
+    font-size: 4.7vw;
+    left: 1%;
+    top: 24vw;
+}
+.s2{
+    position: absolute;
+    font-family: Black;
+    font-size: 4.7vw;
+    left: 15.4%;
+    top: 24vw;
+}
+.s3{
+    position: absolute;
+    font-family: Black;
+    font-size: 5vw;
+    left: 1%;
+    top: 58vw;
+}
+.s4{
+    position: absolute;
+    font-family: Black;
+    font-size: 5vw;
+    left: 17%;
+    top: 58vw;
+}
+.v2{
+    position: absolute;
+    top: 46vw;
+    left: -5.6vw;
+}
+.f{
+    position: absolute;
+    font-family: Black;
+    font-size: 4vw;
+    color: #7A0005;
+    top: 40%;
+    left: 6vw;
+}
+.slva{
+    position: relative;
+    width: 100%;
+    left: 15vw;
+}
+.mas{
+    position: absolute;
+    font-family: Black;
+    font-size: 4vw;
+    color: #7A0005;
+    top: 80%;
+    left: 11.6vw;
+}
+.sk{
+    position: absolute;
+    font-family: MediumItalic;
+    font-size: 2vw;
+    color: #EADEC4;
+    top: 36vw;
+    left: 7vw;
+}
+.vn{
+    position: absolute;
+    font-family: MediumItalic;
+    font-size: 2vw;
+    color: #7A0005;
+    top: 41.6vw;
+    right: -8vw;
+}
+.qqqq{
+    font-family: Italic;
+    font-size: 1vw;
+    color: #7A0005;
+    top: 41.6vw;
+    right: 0;
+}
+.f1{
+    position: relative;
+    width: 100%;
+    top: 200vw;
+}
+.fff{
+    position: absolute;
+    width: 100%;
+}
